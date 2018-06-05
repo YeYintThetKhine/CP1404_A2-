@@ -1,0 +1,26 @@
+# create your Kivy layout in the kv language here
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        BoxLayout:
+            orientation: 'vertical'
+            id: leftLayout
+            width:185
+            cols: 1
+            size_hint:None, 1
+        BoxLayout:
+            orientation: 'vertical'
+            BoxLayout:
+                orientation: 'vertical'
+                id: topLayout
+                size_hint: 1, .1
+            BoxLayout:
+                orientation: 'vertical'
+                id: rightLayout
+                spacing: 1
+
+            Label:
+                size_hint_y: 0.1
+                id: bottomLayout
+
